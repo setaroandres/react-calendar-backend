@@ -18,7 +18,8 @@ app.use(express.json());
 //Rutas - Tenemos que usar el use() middleware para habilitar una ruta como válida y le hacemos el require de lo que tenemos en auth
 //Le decimos que use la ruta que queremos y que importe/use la api que tenemos en el require
 app.use('/api/auth', require('./routes/auth'));
-//TODO: CRUD: Eventos
+//CRUD: Eventos
+app.use('/api/events', require('./routes/events'));
 
 //Aca seteamos en mostrar el directorio publico
 //El use es considerado un middleware, el middleware es un fcn que se ejecuta cuando alguien hace una peticion al servidor

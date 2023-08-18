@@ -2,19 +2,19 @@ const {Schema, model} = require('mongoose');
 
 //Generamos el esquema
 const UsuarioSchema = Schema({
-  //Aca definimos los campos y el esquema que va a tener la tabla
+  //Aca definimos los campos y el esquema que va a tener la coleccion
   name: {
     type: String,
-    require: true
+    required: true
   },
   email: {
     type: String,
-    require: true,
+    required: true,
     unique: true
   },
   password: {
     type: String,
-    require: true
+    required: true
   }
 });
 
